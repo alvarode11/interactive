@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Colossus of Rhodes</title>
+  <link rel="stylesheet" href="china.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="example.html">FREETOURIST</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="example.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="options.html">OPTIONS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="testimonials.html">TESTIMONIALS</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="title">
+      <h1>THE COLOSSUS OF RHODES</h1>
+    </div>
+    <div class="container">
+      <div class="column">
+        <h2>HISTORY</h2>
+        <hr class="linea-roja3">
+        <p>The Colossus of Rhodes was a monumental statue located in the Greek island of Rhodes. It was built in the 3rd century BC to commemorate the island's victory over an invading army.</p>
+        <p>The statue was a representation of the sun god Helios and stood over 30 meters tall. It was made of bronze and iron, and its construction took 12 years to complete. The Colossus of Rhodes was considered one of the Seven Wonders of the Ancient World.</p>
+        <p>Unfortunately, the statue stood for only a few decades before it was destroyed by an earthquake in 226 BC. The ruins of the Colossus remained at the harbor for centuries until they were eventually dismantled and sold as scrap metal.</p>
+      </div>
+      <div class="column">
+        <h2>WHAT TO SEE</h2>
+        <hr class="linea-roja3">
+        <p>Although the Colossus of Rhodes no longer exists, you can still explore the historical significance of this ancient wonder. Some of the key highlights include:</p>
+        <ul>
+          <li>Medieval City of Rhodes: Visit the UNESCO World Heritage site of the medieval city, which includes the Palace of the Grand Master and other historical landmarks.</li>
+          <li>Archaeological Museum of Rhodes: Explore the museum, where you can find artifacts and sculptures related to the Colossus of Rhodes.</li>
+          <li>Harbor Area: Visit the harbor area of Rhodes to imagine the scale and location of the Colossus during ancient times.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="title-container">
+        <h2>PHOTO GALLERY</h2>
+        <hr class="linea-roja4">
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="colossus_artwork1.jpg" alt="Taj Mahal">
+        </div>
+        <div class="mySlides fade">
+          <img src="colossus_artwork2.jpg" alt="Taj Mahal">
+        </div>
+        <div class="mySlides fade">
+          <img src="colossus_artwork3.jpg" alt="Taj Mahal">
+        </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+    
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 1500); // Cambia aquí el tiempo de transición en milisegundos (ejemplo: 2000 para 2 segundos)
+      }
+    </script>
+  </main>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+  const line1 = document.querySelector(".linea-roja1");
+  const h1 = document.querySelector(".title h1");
+
+  const h1TextWidth = h1.scrollWidth;
+  line1.style.width = h1TextWidth + "px";
+});
+
+
+
+  </script>
+  </main>
+  <footer>
+    <footer>
+      <div class="footer-container">
+        <h3 class="footer-heading">FREETOURIST</h3>
+        <p>&copy; 2023 Freetourist. All rights reserved</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="options.html">OPTIONS</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="testimonials.html">TESTIMONIALS</a></li>
+          <li><a href="contact_us.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </footer>
+</body>
+</html>

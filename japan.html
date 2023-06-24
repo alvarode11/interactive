@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Explore Japan</title>
+  <link rel="stylesheet" href="china.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="example.html">FREETOURIST</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="example.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="options.html">OPTIONS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="testimonials.html">TESTIMONIALS</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="title">
+      <h1>EXPLORE JAPAN</h1>
+    </div>
+    <div class="container">
+      <div class="column">
+        <h2>CULTURE</h2>
+        <hr class="linea-roja3">
+        <p>Japan is a country with a unique and fascinating culture deeply rooted in tradition.</p>
+        <p>The Japanese people are known for their politeness, discipline, and attention to detail.</p>
+        <p>Japanese cuisine is celebrated worldwide, with popular dishes such as sushi, ramen, and tempura.</p>
+      </div>
+      <div class="column">
+        <h2>TOP TOURIST DESTINATIONS</h2>
+        <hr class="linea-roja3">
+        <p>When visiting Japan, there are several must-see tourist destinations:</p>
+        <ul>
+          <li>Tokyo: Explore the bustling metropolis of Tokyo, with its futuristic skyscrapers, historic temples, and vibrant neighborhoods.</li>
+          <li>Kyoto: Visit Kyoto, the cultural heart of Japan, known for its traditional wooden houses, stunning gardens, and iconic temples like Kinkaku-ji (Golden Pavilion).</li>
+          <li>Hiroshima Peace Memorial Park: Reflect on the history and visit the memorial park dedicated to the victims of the atomic bombing in 1945.</li>
+          <li>Mount Fuji: Experience the beauty of Mount Fuji, Japan's tallest peak and a UNESCO World Heritage site. You can climb the mountain or admire it from various viewpoints.</li>
+          <li>Nara: Encounter friendly deer and explore the ancient temples and shrines of Nara, including Todai-ji Temple with its Great Buddha.</li>
+          <li>Hakone: Relax in the hot springs of Hakone and enjoy picturesque views of Mount Fuji while cruising on Lake Ashi.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="title-container">
+        <h2>PHOTO GALLERY</h2>
+        <hr class="linea-roja4">
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="japan_image1.jpg" alt="Japan">
+        </div>
+        <div class="mySlides fade">
+          <img src="japan_image2.jpg" alt="Japan">
+        </div>
+        <div class="mySlides fade">
+          <img src="japan_image3.jpg" alt="Japan">
+        </div>
+        <div class="mySlides fade">
+          <img src="japan_image4.jpg" alt="Japan">
+        </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 1500); // Change the transition time in milliseconds here (e.g., 2000 for 2 seconds)
+      }
+    </script>
+  </main>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const line1 = document.querySelector(".linea-roja1");
+      const h1 = document.querySelector(".title h1");
+
+      const h1TextWidth = h1.scrollWidth;
+      line1.style.width = h1TextWidth + "px";
+    });
+  </script>
+  <footer>
+    <footer>
+      <div class="footer-container">
+        <h3 class="footer-heading">FREETOURIST</h3>
+        <p>&copy; 2023 Freetourist. All rights reserved</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="options.html">OPTIONS</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="testimonials.html">TESTIMONIALS</a></li>
+          <li><a href="contact_us.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </footer>
+</body>
+</html>

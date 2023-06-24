@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chichén Itzá</title>
+  <link rel="stylesheet" href="china.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="ejemplo.html">FREETOURIST</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="ejemplo.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="options.html">OPTIONS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="testimonials.html">TESTIMONIALS</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="title">
+        <h1>CHICHÉN ITZÁ</h1>
+    </div> 
+  <div class="container">
+    <div class="column">
+      <h2>HISTORY</h2>
+      <hr class="linea-roja3">
+			<p>Chichén Itzá is an ancient Mayan city located in the Yucatán Peninsula of Mexico. It was one of the largest and most important Mayan cities, thriving between the 9th and 12th centuries AD. The city played a significant role in Mayan civilization, serving as a major political, economic, and religious center.</p>
+			<p>Chichén Itzá is known for its impressive architectural structures, including the iconic El Castillo pyramid, also known as the Temple of Kukulcan. This pyramid stands as a testament to the advanced knowledge and mathematical precision of the Mayans.</p>
+			<p>In 1988, Chichén Itzá was designated as a UNESCO World Heritage Site and in 2007 it was recognized as one of the New Seven Wonders of the World.</p>
+    </div>
+    <div class="column">
+        <h2>WHAT TO SEE</h2>
+        <hr class="linea-roja3">
+        <p>Chichén Itzá features several remarkable structures and points of interest:</p>
+			<ul>
+				<li>El Castillo (Temple of Kukulcan): The iconic step pyramid that served as a temple and astronomical observatory.</li>
+				<li>The Great Ballcourt: The largest ball court in Mesoamerica, where the Mayans played their ceremonial ball game.</li>
+				<li>The Temple of the Warriors: A large temple complex adorned with intricate stone carvings and columns.</li>
+				<li>The Sacred Cenote: A natural sinkhole that was used for sacrificial offerings.</li>
+				<li>The Observatory: A cylindrical tower used for astronomical observations.</li>
+			</ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="title-container">
+      <h2>PHOTO GALLERY</h2>
+      <hr class="linea-roja4">
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="i.jpg" alt="Taj Mahal">
+      </div>
+      <div class="mySlides fade">
+        <img src="tajmahal2.jpg" alt="Taj Mahal">
+      </div>
+      <div class="mySlides fade">
+        <img src="tajmahal3.jpg" alt="Taj Mahal">
+      </div>
+      <div class="mySlides fade">
+        <img src="tajmahal4.jpg" alt="Taj Mahal">
+      </div>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+  <script>
+    var slideIndex = 0;
+    showSlides();
+  
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 1500); // Cambia aquí el tiempo de transición en milisegundos (ejemplo: 2000 para 2 segundos)
+    }
+  </script>
+</main>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+const line1 = document.querySelector(".linea-roja1");
+const h1 = document.querySelector(".title h1");
+
+const h1TextWidth = h1.scrollWidth;
+line1.style.width = h1TextWidth + "px";
+});
+
+
+
+</script>
+</main>
+
+<footer>
+  <footer>
+    <div class="footer-container">
+      <h3 class="footer-heading">FREETOURIST</h3>
+      <p>&copy; 2023 Freetourist. All rights reserved</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="options.html">OPTIONS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="testimonials.html">TESTIMONIALS</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </footer>
+</footer>
+
+</body>
+</html>
+

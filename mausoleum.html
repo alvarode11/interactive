@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mausoleum of Halicarnassus</title>
+  <link rel="stylesheet" href="china.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="example.html">FREETOURIST</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="example.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="options.html">OPTIONS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="testimonials.html">TESTIMONIALS</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="title">
+      <h1>THE MAUSOLEUM OF HALICARNASSUS</h1>
+    </div>
+    <div class="container">
+      <div class="column">
+        <h2>HISTORY</h2>
+        <hr class="linea-roja3">
+        <p>The Mausoleum of Halicarnassus was an ancient tomb located in Halicarnassus (modern-day Bodrum, Turkey). It was commissioned by Mausolus, the ruler of Caria, in the 4th century BC, as a final resting place for himself and his wife Artemisia.</p>
+        <p>The mausoleum was an architectural marvel and became one of the Seven Wonders of the Ancient World. It was designed by renowned architects and adorned with intricate sculptures and reliefs. The monument stood approximately 45 meters tall and featured a stepped pyramid-like structure, topped with a chariot and statues.</p>
+        <p>The Mausoleum of Halicarnassus symbolized the wealth, power, and artistic achievements of the Carian Kingdom. It stood for many centuries until it was destroyed by a series of earthquakes in the 12th and 15th centuries AD. Today, only fragments and archaeological remains remain.</p>
+      </div>
+      <div class="column">
+        <h2>WHAT TO SEE</h2>
+        <hr class="linea-roja3">
+        <p>Although the Mausoleum of Halicarnassus no longer exists in its original form, you can still explore the historical and cultural significance of this ancient monument. Some of the key highlights include:</p>
+        <ul>
+          <li>Bodrum Castle: Visit Bodrum Castle, which was built using some of the stones from the Mausoleum of Halicarnassus. The castle now houses the Museum of Underwater Archaeology.</li>
+          <li>Archaeological Museum of Bodrum: Explore the museum, where you can see artifacts and sculptures related to the Mausoleum of Halicarnassus and learn about its history.</li>
+          <li>Archaeological Site: Visit the archaeological site in Bodrum to see the remaining fragments and foundations of the mausoleum.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="title-container">
+        <h2>PHOTO GALLERY</h2>
+        <hr class="linea-roja4">
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="mausoleum_artwork1.jpg" alt="Taj Mahal">
+        </div>
+        <div class="mySlides fade">
+          <img src="mausoleum_artwork2.jpg" alt="Taj Mahal">
+        </div>
+        <div class="mySlides fade">
+          <img src="mausoleum_artwork3.jpg" alt="Taj Mahal">
+        </div>
+        <div class="mySlides fade">
+          <img src="tajmahal4.jpg" alt="Taj Mahal">
+        </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+    
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 1500); // Cambia aquí el tiempo de transición en milisegundos (ejemplo: 2000 para 2 segundos)
+      }
+    </script>
+      
+        </main>
+        <footer>
+          <div class="footer-container">
+            <h3 class="footer-heading">FREETOURIST</h3>
+            <p>&copy; 2023 Freetourist. All rights reserved</p>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="options.html">OPTIONS</a></li>
+              <li><a href="events.html">EVENTS</a></li>
+              <li><a href="testimonials.html">TESTIMONIALS</a></li>
+              <li><a href="contact_us.html">CONTACT US</a></li>
+            </ul>
+          </nav>
+        </footer>
+      </body>
+      </html>

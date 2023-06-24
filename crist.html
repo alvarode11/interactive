@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cristo Redentor</title>
+  <link rel="stylesheet" href="china.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="example.html">FREETOURIST</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="example.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="options.html">OPTIONS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="testimonials.html">TESTIMONIALS</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="title">
+      <h1>THE CRIST THE REDEMEER</h1>
+    </div>
+    <div class="container">
+      <div class="column">
+        <h2>HISTORY</h2>
+        <hr class="linea-roja3">
+        <p>The Cristo Redentor, also known as the Christ the Redeemer, is a statue of Jesus Christ located in Rio de Janeiro, Brazil. It was built in the 20th century as a symbol of Brazilian Christianity.</p>
+        <p>The statue stands at approximately 30 meters tall, excluding its pedestal, and overlooks the city of Rio de Janeiro from the Corcovado mountain. It is made of reinforced concrete and soapstone and has become an iconic landmark of Brazil.</p>
+        <p>The construction of the Cristo Redentor started in 1922 and was completed in 1931. The statue represents Jesus Christ with open arms, symbolizing peace and welcoming visitors to the city.</p>
+        <p>Today, the Cristo Redentor is one of the most famous tourist attractions in Brazil, attracting millions of visitors each year.</p>
+      </div>
+      <div class="column">
+        <h2>WHAT TO SEE</h2>
+        <hr class="linea-roja3">
+        <p>In addition to the Cristo Redentor statue itself, there are several other attractions to explore in Rio de Janeiro:</p>
+        <ul>
+          <li>Sugarloaf Mountain: Take a cable car ride to the top of Sugarloaf Mountain and enjoy panoramic views of Rio de Janeiro.</li>
+          <li>Copacabana Beach: Relax on the famous Copacabana Beach and soak up the sun.</li>
+          <li>Ipanema Beach: Visit Ipanema Beach, known for its beautiful scenery and vibrant atmosphere.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="title-container">
+        <h2>PHOTO GALLERY</h2>
+        <hr class="linea-roja4">
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="cristoredentor1.jpg" alt="Cristo Redentor">
+        </div>
+        <div class="mySlides fade">
+          <img src="cristoredentor2.jpg" alt="Cristo Redentor">
+        </div>
+        <div class="mySlides fade">
+          <img src="cristoredentor3.jpg" alt="Cristo Redentor">
+        </div>
+        <div class="mySlides fade">
+          <img src="cristoredentor4.jpg" alt="Cristo Redentor">
+        </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 1500); // Cambia aquí el tiempo de transición en milisegundos (ejemplo: 2000 para 2 segundos)
+      }
+    </script>
+  </main>
+  <footer>
+    <footer>
+      <div class="footer-container">
+        <h3 class="footer-heading">FREETOURIST</h3>
+        <p>&copy; 2023 Freetourist. All rights reserved</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="options.html">OPTIONS</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="testimonials.html">TESTIMONIALS</a></li>
+          <li><a href="contact_us.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </footer>
+</body>
+</html>

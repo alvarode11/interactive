@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Discover Spain</title>
+  <link rel="stylesheet" href="china.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="example.html">FREETOURIST</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="example.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="options.html">OPTIONS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="testimonials.html">TESTIMONIALS</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="title">
+      <h1>DISCOVER SPAIN</h1>
+    </div>
+    <div class="container">
+      <div class="column">
+        <h2>CULTURE</h2>
+        <hr class="linea-roja3">
+        <p>Spain is known for its vibrant and diverse culture, influenced by its rich history and regional traditions.</p>
+        <p>The Spanish language, art, music, and dance play a significant role in the country's cultural identity. Flamenco, a passionate and expressive form of dance and music, is particularly emblematic of Spanish culture.</p>
+        <p>Spain is also famous for its cuisine, with dishes like paella, tapas, and sangria capturing the essence of Spanish gastronomy.</p>
+      </div>
+      <div class="column">
+        <h2>TOP TOURIST DESTINATIONS</h2>
+        <hr class="linea-roja3">
+        <p>When visiting Spain, there are several must-see tourist destinations:</p>
+        <ul>
+          <li>Barcelona: Explore the vibrant city of Barcelona, known for its unique architecture, including the famous Sagrada Familia and Park Güell.</li>
+          <li>Madrid: Discover the capital city of Spain, home to world-class museums like the Prado Museum and iconic landmarks such as the Royal Palace.</li>
+          <li>Seville: Immerse yourself in the rich history and culture of Seville, with its stunning Alcázar Palace, Gothic Cathedral, and lively flamenco scene.</li>
+          <li>Granada: Visit the enchanting city of Granada and marvel at the architectural masterpiece of the Alhambra, a stunning Moorish palace.</li>
+          <li>Valencia: Enjoy the beautiful beaches of Valencia and visit the futuristic City of Arts and Sciences, a remarkable architectural complex.</li>
+          <li>Andalusia: Explore the picturesque region of Andalusia, famous for its white-washed villages, such as Ronda and Mijas, and the vibrant city of Cordoba with its stunning Mosque-Cathedral.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="title-container">
+        <h2>PHOTO GALLERY</h2>
+        <hr class="linea-roja4">
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="spain_image1.jpg" alt="Spain">
+        </div>
+        <div class="mySlides fade">
+          <img src="spain_image2.jpg" alt="Spain">
+        </div>
+        <div class="mySlides fade">
+          <img src="spain_image3.jpg" alt="Spain">
+        </div>
+        <div class="mySlides fade">
+          <img src="spain_image4.jpg" alt="Spain">
+        </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+    
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 1500); // Change the transition time in milliseconds here (e.g., 2000 for 2 seconds)
+      }
+    </script>
+  </main>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const line1 = document.querySelector(".linea-roja1");
+      const h1 = document.querySelector(".title h1");
+    
+      const h1TextWidth = h1.scrollWidth;
+      line1.style.width = h1TextWidth + "px";
+    });
+  </script>
+  <footer>
+    <footer>
+      <div class="footer-container">
+        <h3 class="footer-heading">FREETOURIST</h3>
+        <p>&copy; 2023 Freetourist. All rights reserved</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="options.html">OPTIONS</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="testimonials.html">TESTIMONIALS</a></li>
+          <li><a href="contact_us.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </footer>
+</body>
+</html>

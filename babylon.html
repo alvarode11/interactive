@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hanging Gardens of Babylon</title>
+  <link rel="stylesheet" href="china.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="example.html">FREETOURIST</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="example.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="options.html">OPTIONS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="testimonials.html">TESTIMONIALS</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="title">
+      <h1>THE HANGING GARDERN OF BABYLON</h1>
+    </div>
+    <div class="container">
+      <div class="column">
+        <h2>HISTORY</h2>
+        <hr class="linea-roja2">
+        <p>The Hanging Gardens of Babylon were one of the Seven Wonders of the Ancient World and are believed to have been located in the ancient city of Babylon, in present-day Iraq. These gardens were built by King Nebuchadnezzar II in the 6th century BC, as a gift for his wife Amytis.</p>
+        <p>According to ancient accounts, the gardens were an engineering marvel, consisting of terraced gardens with lush vegetation, trees, and flowing water. They were designed to resemble a mountain landscape and were supported by stone columns and arches.</p>
+        <p>The Hanging Gardens of Babylon are renowned for their beauty and were considered a symbol of wealth and luxury in the ancient world. However, their exact location and existence have been a subject of debate among historians.</p>
+      </div>
+      <div class="column">
+        <h2>WHAT TO SEE</h2>
+        <hr class="linea-roja3">
+        <p>Although the Hanging Gardens of Babylon no longer exist, you can still explore their legacy and learn about their historical significance. Some of the key highlights include:</p>
+        <ul>
+          <li>Ancient Babylon Ruins: Visit the archaeological site of ancient Babylon and see the remnants of this once-great city.</li>
+          <li>Babylonian Artifacts: Explore museums that display artifacts from Babylon, including reliefs, sculptures, and inscriptions.</li>
+          <li>Historical Documentation: Study ancient texts and accounts that describe the grandeur of the Hanging Gardens.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="title-container">
+        <h2>PHOTO GALLERY</h2>
+        <hr class="linea-roja4">
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="hanging_gardens_artwork1.jpg" alt="Taj Mahal">
+        </div>
+        <div class="mySlides fade">
+          <img src="hanging_gardens_artwork2.jpg" alt="Taj Mahal">
+        </div>
+        <div class="mySlides fade">
+          <img src="hanging_gardens_artwork3.jpg" alt="Taj Mahal">
+        </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+    
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 1500); // Cambia aquí el tiempo de transición en milisegundos (ejemplo: 2000 para 2 segundos)
+      }
+    </script>
+  </main>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+  const line1 = document.querySelector(".linea-roja1");
+  const h1 = document.querySelector(".title h1");
+
+  const h1TextWidth = h1.scrollWidth;
+  line1.style.width = h1TextWidth + "px";
+});
+
+
+
+  </script>
+  </main>
+  <footer>
+    <footer>
+      <div class="footer-container">
+        <h3 class="footer-heading">FREETOURIST</h3>
+        <p>&copy; 2023 Freetourist. All rights reserved</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="options.html">OPTIONS</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="testimonials.html">TESTIMONIALS</a></li>
+          <li><a href="contact_us.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </footer>
+</body>
+</html>

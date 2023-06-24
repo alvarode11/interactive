@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Easter Island</title>
+  <link rel="stylesheet" href="china.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="example.html">FREETOURIST</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="example.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="options.html">OPTIONS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="testimonials.html">TESTIMONIALS</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="title">
+      <h1>THE EASTER ISLAND</h1>
+    </div>
+    <div class="container">
+      <div class="column">
+        <h2>ABOUT</h2>
+        <hr class="linea-roja3">
+        <p>Easter Island, also known as Rapa Nui, is a remote island located in the southeastern Pacific Ocean. It is famous for its enigmatic giant stone statues called moai, which were carved by the early inhabitants of the island.</p>
+        <p>The island is of great archaeological significance and is a UNESCO World Heritage Site. It is believed that the first settlers arrived on the island around the 5th century AD and began carving the massive stone statues. The purpose of the moai and the methods used to transport and erect them remain a subject of debate among researchers.</p>
+        <p>In addition to the moai, Easter Island is known for its stunning natural beauty, including volcanic landscapes, pristine beaches, and unique flora and fauna. Visitors can explore the archaeological sites, learn about the island's rich history and culture, and enjoy the picturesque surroundings.</p>
+      </div>
+      <div class="column">
+        <h2>WHAT TO SEE</h2>
+        <hr class="linea-roja3">
+        <p>When visiting Easter Island, make sure to explore the following highlights:</p>
+        <ul>
+          <li>Rano Raraku: Visit the quarry where most of the moai were carved. You can see numerous unfinished statues and learn about the carving process.</li>
+          <li>Ahu Tongariki: Marvel at the largest and most impressive ceremonial platform on the island, featuring 15 restored moai statues.</li>
+          <li>Anakena Beach: Relax on the beautiful white sandy beach, located near a cluster of moai and surrounded by palm trees.</li>
+          <li>Orongo: Discover the ceremonial village of Orongo, where the Birdman competition took place, and admire the petroglyphs and volcanic crater.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="title-container">
+        <h2>PHOTO GALLERY</h2>
+        <hr class="linea-roja4">
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="easter_island_image1.jpg" alt="Taj Mahal">
+        </div>
+        <div class="mySlides fade">
+          <img src="easter_island_image2.jpg" alt="Taj Mahal">
+        </div>
+        <div class="mySlides fade">
+          <img src="easter_island_image3.jpg" alt="Taj Mahal">
+        </div>
+        <div class="mySlides fade">
+          <img src="easter_island_image4.jpg" alt="Taj Mahal">
+        </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+    
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 1500); // Cambia aquí el tiempo de transición en milisegundos (ejemplo: 2000 para 2 segundos)
+      }
+    </script>
+  </main>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+  const line1 = document.querySelector(".linea-roja1");
+  const h1 = document.querySelector(".title h1");
+
+  const h1TextWidth = h1.scrollWidth;
+  line1.style.width = h1TextWidth + "px";
+});
+
+
+
+  </script>
+  </main>
+  <footer>
+    <footer>
+      <div class="footer-container">
+        <h3 class="footer-heading">FREETOURIST</h3>
+        <p>&copy; 2023 Freetourist. All rights reserved</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="options.html">OPTIONS</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="testimonials.html">TESTIMONIALS</a></li>
+          <li><a href="contact_us.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Discover Italy</title>
+  <link rel="stylesheet" href="china.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="example.html">FREETOURIST</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="example.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="options.html">OPTIONS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="testimonials.html">TESTIMONIALS</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="title">
+      <h1>DISCOVER ITALY</h1>
+    </div>
+    <div class="container">
+      <div class="column">
+        <h2>CULTURE</h2>
+        <hr class="linea-roja3">
+        <p>Italy is renowned for its rich cultural heritage, art, history, and gastronomy.</p>
+        <p>The Italian Renaissance had a profound influence on art and architecture, with masterpieces like Michelangelo's David and Leonardo da Vinci's Last Supper showcasing Italy's artistic prowess.</p>
+        <p>Italian cuisine is beloved worldwide, with dishes such as pasta, pizza, gelato, and espresso being iconic symbols of Italian gastronomy.</p>
+      </div>
+      <div class="column">
+        <h2>TOP TOURIST DESTINATIONS</h2>
+        <hr class="linea-roja3">
+        <p>When visiting Italy, there are several must-see tourist destinations:</p>
+        <ul>
+          <li>Rome: Explore the Eternal City and visit iconic landmarks such as the Colosseum, Roman Forum, Vatican City, and the Sistine Chapel.</li>
+          <li>Florence: Immerse yourself in the birthplace of the Renaissance and admire treasures like the Florence Cathedral, Uffizi Gallery, and Ponte Vecchio.</li>
+          <li>Venice: Experience the enchanting city built on water, known for its romantic canals, gondolas, St. Mark's Square, and the Doge's Palace.</li>
+          <li>Cinque Terre: Discover the picturesque coastal region consisting of five colorful fishing villages perched on the cliffs, offering breathtaking views and hiking trails.</li>
+          <li>Amalfi Coast: Enjoy the stunning coastal scenery along the Amalfi Coast, with its charming towns like Positano, Ravello, and the historic city of Amalfi.</li>
+          <li>Tuscany: Indulge in the beauty of the Tuscan countryside, visit charming hilltop towns like Siena and San Gimignano, and explore the vineyards of Chianti.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="title-container">
+        <h2>PHOTO GALLERY</h2>
+        <hr class="linea-roja4">
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="italy_image1.jpg" alt="Italy">
+        </div>
+        <div class="mySlides fade">
+          <img src="italy_image2.jpg" alt="Italy">
+        </div>
+        <div class="mySlides fade">
+          <img src="italy_image3.jpg" alt="Italy">
+        </div>
+        <div class="mySlides fade">
+          <img src="italy_image4.jpg" alt="Italy">
+        </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 1500); // Change the transition time in milliseconds here (e.g., 2000 for 2 seconds)
+      }
+    </script>
+  </main>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const line1 = document.querySelector(".linea-roja1");
+      const h1 = document.querySelector(".title h1");
+
+      const h1TextWidth = h1.scrollWidth;
+      line1.style.width = h1TextWidth + "px";
+    });
+  </script>
+  <footer>
+    <footer>
+      <div class="footer-container">
+        <h3 class="footer-heading">FREETOURIST</h3>
+        <p>&copy; 2023 Freetourist. All rights reserved</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="options.html">OPTIONS</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="testimonials.html">TESTIMONIALS</a></li>
+          <li><a href="contact_us.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </footer>
+</body>
+</html>

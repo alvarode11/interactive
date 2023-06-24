@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Statue of Zeus</title>
+  <link rel="stylesheet" href="china.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="example.html">FREETOURIST</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="example.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="options.html">OPTIONS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="testimonials.html">TESTIMONIALS</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="title">
+      <h1>THE STATUE OF ZEUS</h1>
+    </div>
+    <div class="container">
+      <div class="column">
+        <h2>HISTORY</h2>
+        <hr class="linea-roja3">
+        <p>The Statue of Zeus was an ancient wonder located in Olympia, Greece. It was a giant seated statue of the Greek god Zeus and was created by the renowned sculptor Phidias in the 5th century BC.</p>
+        <p>The statue stood over 40 feet tall and was made of ivory and gold. It depicted Zeus sitting on a throne, holding a scepter in one hand and a statue of Nike, the goddess of victory, in the other. The statue was housed in the Temple of Zeus, a grand temple dedicated to the deity.</p>
+        <p>The Statue of Zeus was considered one of the most magnificent works of ancient Greek art. It was a symbol of power, majesty, and religious devotion. Unfortunately, the statue was destroyed in a fire in the 5th century AD, and today only its descriptions and depictions remain.</p>
+      </div>
+      <div class="column">
+        <h2>WHAT TO SEE</h2>
+        <hr class="linea-roja3">
+        <p>Although the Statue of Zeus no longer exists, you can still explore the historical and artistic legacy associated with it. Some of the key highlights include:</p>
+        <ul>
+          <li>Olympia Archaeological Site: Visit the archaeological site of Olympia and discover the ruins of the Temple of Zeus, where the statue was once housed.</li>
+          <li>Olympia Museum: Explore the museum that displays artifacts from Olympia, including sculptures and fragments related to the Statue of Zeus.</li>
+          <li>Historical Accounts: Study ancient texts and descriptions that provide insights into the grandeur and significance of the Statue of Zeus.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="title-container">
+        <h2>PHOTO GALLERY</h2>
+        <hr class="linea-roja4">
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="zeus_statue_artwork1.jpg" alt="Taj Mahal">
+        </div>
+        <div class="mySlides fade">
+          <img src="zeus_statue_artwork2.jpg" alt="Taj Mahal">
+        </div>
+        <div class="mySlides fade">
+          <img src="zeus_statue_artwork3.jpg" alt="Taj Mahal">
+        </div>
+        <div class="mySlides fade">
+          <img src="tajmahal4.jpg" alt="Taj Mahal">
+        </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+    
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 1500); // Cambia aquí el tiempo de transición en milisegundos (ejemplo: 2000 para 2 segundos)
+      }
+    </script>
+  </main>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+  const line1 = document.querySelector(".linea-roja1");
+  const h1 = document.querySelector(".title h1");
+
+  const h1TextWidth = h1.scrollWidth;
+  line1.style.width = h1TextWidth + "px";
+});
+
+
+
+  </script>
+  </main>
+  <footer>
+    <footer>
+      <div class="footer-container">
+        <h3 class="footer-heading">FREETOURIST</h3>
+        <p>&copy; 2023 Freetourist. All rights reserved</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="options.html">OPTIONS</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="testimonials.html">TESTIMONIALS</a></li>
+          <li><a href="contact_us.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </footer>
+</body>
+</html>

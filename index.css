@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .title{
+    margin-bottom: 3.5%;
+    font-size: 300%;
+    color:rgb(249, 85, 3);
+    text-align: center;
+    text-decoration: underline rgb(249, 85, 3);
+    
+ }  
+
+ body{
+
+    background-image: url('IMAGE1-transformed\ \(1\)\ \(1\).jpeg');
+
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+  .container button {
+    margin-top: 40px;
+    padding: 62px 40px;
+    background-color: transparent;
+    color:  rgb(249, 85, 3);
+    border: none;
+    border-radius: 20px;
+    font-size: 31.8555px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  .container button:hover {
+    background-color: rgb(232, 185, 161);
+  }
+
+  

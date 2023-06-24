@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Discover France</title>
+  <link rel="stylesheet" href="china.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="example.html">FREETOURIST</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="example.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="options.html">OPTIONS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="testimonials.html">TESTIMONIALS</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="title">
+      <h1>DISCOVER FRANCE</h1>
+    </div>
+    <div class="container">
+      <div class="column">
+        <h2>CULTURE</h2>
+        <hr class="linea-roja3">
+        <p>France is renowned for its rich cultural heritage. The country has made significant contributions to art, literature, philosophy, fashion, and cuisine.</p>
+        <p>French culture values elegance, sophistication, and a passion for the arts. The French language, known for its beauty and expressiveness, is an integral part of the cultural identity of the country.</p>
+        <p>France is also famous for its gastronomy, with French cuisine being celebrated worldwide. French wine, cheese, pastries, and other delicacies are considered among the finest in the world.</p>
+      </div>
+      <div class="column">
+        <h2>TOP TOURIST DESTINATIONS</h2>
+        <hr class="linea-roja3">
+        <p>When visiting France, there are several must-see tourist destinations:</p>
+        <ul>
+          <li>Paris: Explore the enchanting capital city of France, home to iconic landmarks like the Eiffel Tower, Louvre Museum, Notre-Dame Cathedral, and Champs-Élysées.</li>
+          <li>Provence: Immerse yourself in the scenic beauty of the Provence region, known for its lavender fields, charming villages, and historic sites like the Palais des Papes in Avignon.</li>
+          <li>French Riviera: Relax on the glamorous beaches of the French Riviera, visit the famous cities of Nice, Cannes, and Monaco, and experience the vibrant nightlife.</li>
+          <li>Loire Valley: Marvel at the splendid châteaux of the Loire Valley, such as Château de Chambord and Château de Chenonceau, known for their architectural beauty and historical significance.</li>
+          <li>Mont Saint-Michel: Discover the medieval abbey and picturesque village of Mont Saint-Michel, situated on a rocky island in Normandy.</li>
+          <li>Alsace: Experience the unique blend of French and German influences in the charming towns and vineyards of the Alsace region.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="title-container">
+        <h2>PHOTO GALLERY</h2>
+        <hr class="linea-roja4">
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="france_image1.jpg" alt="France">
+        </div>
+        <div class="mySlides fade">
+          <img src="france_image2.jpg" alt="France">
+        </div>
+        <div class="mySlides fade">
+          <img src="france_image3.jpg" alt="France">
+        </div>
+        <div class="mySlides fade">
+          <img src="france_image4.jpg" alt="France">
+        </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+    
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 1500); // Change the transition time in milliseconds here (e.g., 2000 for 2 seconds)
+      }
+    </script>
+  </main>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const line1 = document.querySelector(".linea-roja1");
+      const h1 = document.querySelector(".title h1");
+    
+      const h1TextWidth = h1.scrollWidth;
+      line1.style.width = h1TextWidth + "px";
+    });
+  </script>
+  <footer>
+    <footer>
+      <div class="footer-container">
+        <h3 class="footer-heading">FREETOURIST</h3>
+        <p>&copy; 2023 Freetourist. All rights reserved</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="options.html">OPTIONS</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="testimonials.html">TESTIMONIALS</a></li>
+          <li><a href="contact_us.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </footer>
+</body>
+</html>

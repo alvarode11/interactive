@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Explore Mexico</title>
+  <link rel="stylesheet" href="china.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="example.html">FREETOURIST</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="example.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="options.html">OPTIONS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="testimonials.html">TESTIMONIALS</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="title">
+      <h1>EXPLORE MEXICO</h1>
+    </div>
+    <div class="container">
+      <div class="column">
+        <h2>CULTURE</h2>
+        <hr class="linea-roja3">
+        <p>Mexico is a country with a rich and diverse culture influenced by its indigenous heritage and Spanish colonization.</p>
+        <p>The vibrant traditions, colorful festivals, and delicious cuisine are a testament to Mexico's cultural richness.</p>
+        <p>Mexican art, music, and dance are renowned worldwide, with notable contributions such as mariachi music, folkloric ballet, and traditional handicrafts like pottery and textiles.</p>
+      </div>
+      <div class="column">
+        <h2>TOP TOURIST DESTINATIONS</h2>
+        <hr class="linea-roja3">
+        <p>When exploring Mexico, there are several iconic tourist destinations to visit:</p>
+        <ul>
+          <li>Mexico City: Discover the bustling capital city with its historic center, visit the impressive National Palace, and explore the ancient ruins of Teotihuacan.</li>
+          <li>Cancun: Enjoy the beautiful beaches, indulge in water sports, and explore the vibrant nightlife of this popular resort city on the Yucatan Peninsula.</li>
+          <li>Chichen Itza: Explore the ancient Mayan ruins of Chichen Itza, including the famous El Castillo pyramid, a UNESCO World Heritage site.</li>
+          <li>Playa del Carmen: Relax on the stunning beaches of the Riviera Maya, go scuba diving in the Great Maya Reef, and visit the vibrant Fifth Avenue.</li>
+          <li>Oaxaca: Immerse yourself in the rich cultural heritage of Oaxaca, explore its colonial architecture, and sample traditional Mexican cuisine.</li>
+          <li>Los Cabos: Enjoy the luxury resorts, go deep-sea fishing, and take in the breathtaking views of the desert meeting the sea in this popular beach destination.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="title-container">
+        <h2>PHOTO GALLERY</h2>
+        <hr class="linea-roja4">
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="mexico_image1.jpg" alt="Mexico">
+        </div>
+        <div class="mySlides fade">
+          <img src="mexico_image2.jpg" alt="Mexico">
+        </div>
+        <div class="mySlides fade">
+          <img src="mexico_image3.jpg" alt="Mexico">
+        </div>
+        <div class="mySlides fade">
+          <img src="mexico_image4.jpg" alt="Mexico">
+        </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 1500); // Change the transition time in milliseconds here (e.g., 2000 for 2 seconds)
+      }
+    </script>
+  </main>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const line1 = document.querySelector(".linea-roja1");
+      const h1 = document.querySelector(".title h1");
+
+      const h1TextWidth = h1.scrollWidth;
+      line1.style.width = h1TextWidth + "px";
+    });
+  </script>
+  <footer>
+    <footer>
+      <div class="footer-container">
+        <h3 class="footer-heading">FREETOURIST</h3>
+        <p>&copy; 2023 Freetourist. All rights reserved</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="options.html">OPTIONS</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="testimonials.html">TESTIMONIALS</a></li>
+          <li><a href="contact_us.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </footer>
+</body>
+</html>

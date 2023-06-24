@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>THe great wall of china</title>
+  <link rel="stylesheet" href="china.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="ejemplo.html">FREETOURIST</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="ejemplo.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="options.html">OPTIONS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="testimonials.html">TESTIMONIALS</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="title">
+        <h1>THE GREAT WALL OF CHINA</h1>
+    </div> 
+  <div class="container">
+    <div class="column">
+      <h2>HISTORY</h2>
+      <hr class="linea-roja3">
+			<p>The Great Wall of China is a series of military fortifications built over several centuries by different Chinese dynasties to protect their territory from invasions by nomadic peoples from the north, especially the Mongols. The construction of the wall began in the 7th century BC, but it was during the Ming dynasty (1368-1644) that most of the wall we know today was built.</p>
+			<p>The wall is approximately 21,000 km long and is made up of different sections constructed with various materials such as bricks, stones, and compacted earth. During its construction, it is estimated that over a million people worked on it, and many of them died due to the harsh working conditions.</p>
+			<p>Today, the Great Wall of China is one of the most visited monuments in the world and has been declared a UNESCO World Heritage Site.</p>
+    </div>
+    <div class="column">
+        <h2>WHAT TO SEE</h2>
+        <hr class="linea-roja3">
+        <p>La Gran Muralla de China tiene numerosas secciones abiertas al público, cada una con sus características y bellezas propias. Algunas de las secciones más populares son:</p>
+			<ul>
+				<li>Badaling: esta es la sección más visitada y la más restaurada. Se encuentra a unos 80 km al noroeste de Beijing y cuenta con teleféricos y telesillas para acceder a la muralla.</li>
+				<li>Juyongguan: esta sección se encuentra a unos 60 km al noroeste de Beijing y es famosa por sus paisajes montañosos y sus torres de vigilancia.</li>
+				<li>Mutianyu: esta sección se encuentra a unos 70 km al nordeste de Beijing y es conocida por sus espectaculares vistas panorámicas y sus toboganes para bajar de la muralla.</li>
+				<li>Jinshanling: esta sección se encuentra a unos 150 km al nordeste de Beijing y es famosa por sus torres de vigilancia y sus vistas panorámicas de las montañas.</li>
+      </ul>
+      
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="title-container">
+      <h2>PHOTO GALLERY</h2>
+      <hr class="linea-roja4">
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="badaling.jpg" alt="Taj Mahal">
+      </div>
+      <div class="mySlides fade">
+        <img src="Jinshanling.jpg" alt="Taj Mahal">
+      </div>
+      <div class="mySlides fade">
+        <img src="Juyongguan.jpg" alt="Taj Mahal">
+      </div>
+      <div class="mySlides fade">
+        <img src="Mutianyu.jpg" alt="Taj Mahal">
+      </div>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+  <script>
+    var slideIndex = 0;
+    showSlides();
+  
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 1500); // Cambia aquí el tiempo de transición en milisegundos (ejemplo: 2000 para 2 segundos)
+    }
+  </script>
+</main>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+const line1 = document.querySelector(".linea-roja1");
+const h1 = document.querySelector(".title h1");
+
+const h1TextWidth = h1.scrollWidth;
+line1.style.width = h1TextWidth + "px";
+});
+
+
+
+</script>
+</main>
+        
+<footer>
+  <footer>
+    <div class="footer-container">
+      <h3 class="footer-heading">FREETOURIST</h3>
+      <p>&copy; 2023 Freetourist. All rights reserved</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="options.html">OPTIONS</a></li>
+      <li><a href="events.html">EVENTS</a></li>
+      <li><a href="testimonials.html">TESTIMONIALS</a></li>
+      <li><a href="contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </footer>
+  
+</footer>
+
+</body>
+</html>
+
+

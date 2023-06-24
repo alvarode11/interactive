@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Petra: Historia y qué ver</title>
+  <link rel="stylesheet" href="china.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="ejemplo.html">FREETOURIST</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="ejemplo.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="options.html">OPTIONS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="testimonials.html">TESTIMONIALS</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="title">
+        <h1>PETRA: THE ROSE CITY</h1>
+    </div> 
+  <div class="container">
+    <div class="column">
+        <h2>HISTORY</h2>
+        <hr class="linea-roja3">
+        <p>Petra is a historic city in Jordan, famous for its stone-carved buildings and for being one of the main tourist attractions in the region. It was built around the 6th century BC by the Nabataeans, an Arab tribe that controlled the caravan route between Arabia, Egypt, and Syria. During its heyday, Petra was an important commercial and religious center, and its inhabitants built numerous impressive buildings and monuments.</p>
+        <p>The city was abandoned in the 7th century and remained hidden in the desert for centuries until it was rediscovered by the Swiss explorer Johann Ludwig Burckhardt in 1812.</p>
+    </div>
+    <div class="column">
+        <h2>WHAT TO SEE</h2>
+        <hr class="linea-roja3">
+        <p>Petra boasts numerous impressive monuments and buildings, many of which are carved into the rock. Among the most prominent places to visit are:</p>
+        <ul>
+            <li>The Siq, a narrow canyon that leads to the entrance of the city</li>
+            <li>The Treasury, an impressive rock-carved building that is the most famous monument in Petra</li>
+            <li>The Amphitheater, a rock-carved theater that could accommodate 4,000 people</li>
+            <li>The Monastery, another impressive rock-carved building that offers panoramic views of the city and the surrounding desert</li>
+        </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="title-container">
+      <h2>PHOTO GALLERY</h2>
+      <hr class="linea-roja4">
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="petra.jpg" alt="Taj Mahal">
+      </div>
+      <div class="mySlides fade">
+        <img src="tesoro.jpg" alt="Taj Mahal">
+      </div>
+      <div class="mySlides fade">
+        <img src="siq.jpg" alt="Taj Mahal">
+      </div>
+      <div class="mySlides fade">
+        <img src="tajmahal4.jpg" alt="Taj Mahal">
+      </div>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+  <script>
+    var slideIndex = 0;
+    showSlides();
+  
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 1500); // Cambia aquí el tiempo de transición en milisegundos (ejemplo: 2000 para 2 segundos)
+    }
+  </script>
+</main>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+const line1 = document.querySelector(".linea-roja1");
+const h1 = document.querySelector(".title h1");
+
+const h1TextWidth = h1.scrollWidth;
+line1.style.width = h1TextWidth + "px";
+});
+
+
+
+</script>
+</main>
+        
+<footer>
+  <footer>
+    <div class="footer-container">
+      <h3 class="footer-heading">FREETOURIST</h3>
+      <p>&copy; 2023 Freetourist. All rights reserved</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="options.html">OPTIONS</a></li>
+      <li><a href="events.html">EVENTS</a></li>
+      <li><a href="testimonials.html">TESTIMONIALS</a></li>
+      <li><a href="contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </footer>
+  
+</footer>
+
+</body>
+</html>
+
+

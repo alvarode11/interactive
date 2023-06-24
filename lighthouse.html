@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lighthouse of Alexandria</title>
+  <link rel="stylesheet" href="china.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="example.html">FREETOURIST</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="example.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="options.html">OPTIONS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="testimonials.html">TESTIMONIALS</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="title">
+      <h1>THE LIGHTHOUSE OF ALEXANDRIA</h1>
+    </div>
+    <div class="container">
+      <div class="column">
+        <h2>HISTORY</h2>
+        <hr class="linea-roja3">
+        <p>The Lighthouse of Alexandria, also known as the Pharos of Alexandria, was a towering structure located on the island of Pharos in Alexandria, Egypt. It was built in the 3rd century BC during the reign of Ptolemy I.</p>
+        <p>The lighthouse was approximately 120 meters tall and was considered one of the Seven Wonders of the Ancient World. It served as a navigational aid for ships entering the port of Alexandria, guiding them safely to shore.</p>
+        <p>The structure was built with white marble and featured three sections: a square base, a middle octagonal section, and a cylindrical top. The top of the lighthouse housed a large mirror that reflected sunlight during the day, and a fire was lit at night to provide illumination.</p>
+        <p>The Lighthouse of Alexandria stood for centuries as a symbol of the city's wealth and prosperity. However, it was severely damaged by several earthquakes over the years and eventually collapsed in the 14th century AD.</p>
+      </div>
+      <div class="column">
+        <h2>WHAT TO SEE</h2>
+        <hr class="linea-roja3">
+        <p>Although the Lighthouse of Alexandria no longer exists, you can still explore the rich history and cultural heritage of Alexandria. Some of the key highlights include:</p>
+        <ul>
+          <li>Qaitbay Citadel: Visit the Qaitbay Citadel, a 15th-century fortress built on the site of the original lighthouse. It offers panoramic views of the city and the Mediterranean Sea.</li>
+          <li>Alexandria National Museum: Explore the museum, which houses a collection of artifacts from ancient Egypt, including objects related to the lighthouse.</li>
+          <li>Alexandria Corniche: Take a stroll along the waterfront promenade known as the Corniche and enjoy the views of the Mediterranean Sea.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="title-container">
+        <h2>PHOTO GALLERY</h2>
+        <hr class="linea-roja4">
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="lighthouse_artwork1.jpg" alt="Taj Mahal">
+        </div>
+        <div class="mySlides fade">
+          <img src="lighthouse_artwork2.jpg" alt="Taj Mahal">
+        </div>
+        <div class="mySlides fade">
+          <img src="lighthouse_artwork3.jpg" alt="Taj Mahal">
+        </div>
+        <div class="mySlides fade">
+          <img src="tajmahal4.jpg" alt="Taj Mahal">
+        </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+    
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 1500); // Cambia aquí el tiempo de transición en milisegundos (ejemplo: 2000 para 2 segundos)
+      }
+    </script>
+  </main>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+  const line1 = document.querySelector(".linea-roja1");
+  const h1 = document.querySelector(".title h1");
+
+  const h1TextWidth = h1.scrollWidth;
+  line1.style.width = h1TextWidth + "px";
+});
+
+
+
+  </script>
+</main>
+<footer>
+  <footer>
+    <div class="footer-container">
+      <h3 class="footer-heading">FREETOURIST</h3>
+      <p>&copy; 2023 Freetourist. All rights reserved</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="options.html">OPTIONS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="testimonials.html">TESTIMONIALS</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </footer>
+</footer>
+</body>
+</html>

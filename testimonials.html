@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FREETOURIST</title>
+    <link rel="stylesheet" href="ejemplo.css" />
+    <link rel="stylesheet" href="css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="ejemplo.html">FREETOURIST</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="ejemplo.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="options.html">OPTIONS</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="testimonials.html">TESTIMONIALS</a></li>
+          <li><a href="contact_us.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <div class="testimonials">
+            <div class="texto5">
+              <h2>TESTIMONIALS</h2>
+              <hr class="linea-roja5">
+            </div>
+            <div class="carousel">
+              <div class="carousel__viewport">
+                <div class="carousel__slide">
+                  <img src="review1.jpg" alt="Imagen 1">
+                  <div class="carousel__slide-text">
+                    <i class="fa-solid fa-quote-left fa-lg"></i>
+                    <p>The website is an excellent travel guide. I found all the information I needed to plan my vacation. The wonders of the world section inspired me to visit unique places full of history. Additionally, the events section kept me updated on upcoming festivals and activities around the world. I highly recommend this website to all travel enthusiasts!</p>
+                    <i class="fa-solid fa-quote-right fa-lg"></i>
+                    <div class="orange-line"></div>
+                    <p class="additional-text">Joe Smith</p>
+                  </div>
+                  
+                </div>
+                <div class="carousel__slide">
+                  <img src="review2.jpg" alt="Imagen 2">
+                  <div class="carousel__slide-text">
+                    <i class="fa-solid fa-quote-left fa-lg"></i>
+                    <p>I discovered the website while searching for popular destinations for my vacation, and I was pleasantly surprised. The most visited countries section provided me with a wide selection of incredible places to explore. I also appreciated the detailed information in the 'About' section, which helped me understand the mission and purpose of the website. I can't wait to start planning my next trip with the help of this amazing platform!</p>
+                    <i class="fa-solid fa-quote-right fa-lg"></i>
+                    <div class="orange-line"></div>
+                    <p class="additional-text">Julia Western</p>
+                  </div>
+                </div>
+                <div class="carousel__slide">
+                  <img src="review3.jpg" alt="Imagen 3">
+                  <div class="carousel__slide-text">
+                    <i class="fa-solid fa-quote-left fa-lg"></i>
+                    <p>The website is an invaluable tool for any traveler. The testimonials section gave me a clear idea of other users' experiences and helped me feel more confident when booking my accommodations and activities. Additionally, the modern design and intuitive navigation made exploring the site easy and enjoyable. This website has definitely become my go-to resource for reliable and up-to-date travel information.</p>
+                    <i class="fa-solid fa-quote-right fa-lg"></i>
+                    <div class="orange-line"></div>
+                    <p class="additional-text">Amy Warmouth</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel__next">
+                <i class="fa-solid fa-chevron-right fa-xl"></i>
+              </button>
+              <button class="carousel__prev">
+                <i class="fa-solid fa-chevron-left fa-xl"></i>
+              </button>
+              <div class="carousel__indicators"></div>
+            </div>
+          </div>
+          
+          <script>
+           document.addEventListener("DOMContentLoaded", function() {
+          const carousel = document.querySelector(".carousel");
+          const prevButton = carousel.querySelector(".carousel__prev");
+          const nextButton = carousel.querySelector(".carousel__next");
+          const viewport = carousel.querySelector(".carousel__viewport");
+          const indicatorsContainer = carousel.querySelector(".carousel__indicators");
+    
+          const slideWidth = carousel.querySelector(".carousel__slide").offsetWidth;
+          let currentPosition = 0;
+    
+          function slideToPosition(position) {
+            viewport.style.transform = `translateX(${position}px)`;
+          }
+    
+          function slideToNext() {
+            currentPosition -= slideWidth;
+            if (currentPosition < -(slideWidth * (viewport.childElementCount - 1))) {
+              currentPosition = 0;
+            }
+            slideToPosition(currentPosition);
+            updateIndicators();
+          }
+    
+          function slideToPrev() {
+            currentPosition += slideWidth;
+            if (currentPosition > 0) {
+              currentPosition = -(slideWidth * (viewport.childElementCount - 1));
+            }
+            slideToPosition(currentPosition);
+            updateIndicators();
+          }
+    
+          function updateIndicators() {
+            const slides = Array.from(viewport.children);
+            const activeSlideIndex = Math.abs(currentPosition / slideWidth);
+            indicatorsContainer.innerHTML = "";
+    
+            slides.forEach((slide, index) => {
+              const indicator = document.createElement("div");
+              indicator.classList.add("carousel__indicator");
+              if (index === activeSlideIndex) {
+                indicator.classList.add("active");
+              }
+              indicator.addEventListener("click", function() {
+                currentPosition = -(slideWidth * index);
+                slideToPosition(currentPosition);
+                updateIndicators();
+              });
+              indicatorsContainer.appendChild(indicator);
+            });
+          }
+    
+          prevButton.addEventListener("click", function() {
+            slideToPrev();
+          });
+    
+          nextButton.addEventListener("click", function() {
+            slideToNext();
+          });
+    
+          updateIndicators();
+        });
+           
+          </script>
+          </main>
+    
+          <footer>
+              <footer>
+              <div class="footer-container">
+                  <h3 class="footer-heading">FREETOURIST</h3>
+                  <p>&copy; 2023 Freetourist. All rights reserved</p>
+              </div>
+              <nav>
+                  <ul>
+                    <li><a href="ejemplo.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="options.html">OPTIONS</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="testimonials.html">TESTIMONIALS</a></li>
+                    <li><a href="contact_us.html">CONTACT US</a></li>
+                  </ul>
+              </nav>
+              </footer>
+              
+          </footer>
+          
+          </body>
+      </html>

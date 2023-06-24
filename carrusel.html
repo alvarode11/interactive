@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Taj Mahal</title>
+  <link rel="stylesheet" href="china.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    main {
+      margin-top: 50px;
+      background-color: #000000;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: whitesmoke;
+      z-index: 999999;
+      padding: 20px;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    header nav li {
+      margin-left: 20px;
+    }
+
+    header nav li:first-child {
+      margin-left: 0;
+    }
+
+    header nav li a {
+      color: #555;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .logo {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .logo a {
+      font-size: 1.5em;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+      padding: 10px;
+      border-top: 2px solid;
+      border-bottom: 2px solid;
+      margin-left: 10px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+
+    .column {
+      flex: 0 0 48%;
+      margin-bottom: 30px;
+      background-color:  #1b262c;
+      padding: 20px;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    .column h2 {
+      margin-bottom: 10px;
+      font-size: 24px;
+      color: whitesmoke;
+      text-align: center;
+      position: relative;
+      margin-top: 20px;
+    }
+
+    .column p {
+      color: whitesmoke;
+      line-height: 1.5;
+      margin-bottom: 10px;
+      margin-top: 20px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* Cambiamos "center" a "space-between" */
+      align-items: center; /* Alinea verticalmente los elementos al centro */
+      margin-top: 30px;
+    }
+
+    .title-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .title-container h2 {
+      margin: 0;
+      font-size: 24px;
+      color: whitesmoke;
+    }
+
+    .title-container .linea-roja4 {
+      border: none;
+      height: 7px;
+      background-color: rgb(249, 85, 3);
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .slideshow-container {
+      position: relative;
+      margin-left: 20px; /* Añadimos un margen a la izquierda */
+    }
+
+    .slideshow-container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 120%; /* Ajusta el ancho según sea necesario */
+      height: 100%; /* Ajusta la altura según sea necesario */
+      background-color: orange; /* Establece el color deseado */
+      opacity: 0.8; /* Ajusta el valor de opacidad según sea necesario */
+      z-index: 1; /* Asegura que la superposición aparezca sobre el carrusel */
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .mySlides img {
+      width: 100%;
+      height: auto;
+    }
+
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .dot-container {
+      text-align: center;
+      padding: 20px;
+      background: #1b262c;
+    }
+
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+
+    @media screen and (max-width: 768px) {
+      .column {
+        flex: 0 0 100%;
+      }
+
+      .title-container {
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="#">My Website</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="column">
+        <h2>About Taj Mahal</h2>
+        <p>
+          The Taj Mahal is an ivory-white marble mausoleum on the right bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor, Shah Jahan, to house the tomb of his favorite wife, Mumtaz Mahal.
+        </p>
+      </div>
+      <div class="column">
+        <h2>History</h2>
+        <p>
+          The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 and is considered one of the greatest architectural masterpieces in the world. It attracts millions of visitors every year and is a symbol of love and romance.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="title-container">
+        <h2>Photos of Taj Mahal</h2>
+        <div class="linea-roja4"></div>
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides">
+          <img src="tajmahal1.jpg" alt="Taj Mahal">
+        </div>
+        <div class="mySlides">
+          <img src="tajmahal2.jpg" alt="Taj Mahal">
+        </div>
+        <div class="mySlides">
+          <img src="tajmahal3.jpg" alt="Taj Mahal">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </main>
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+</body>
+</html>

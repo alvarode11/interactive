@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Colosseum</title>
+  <link rel="stylesheet" href="china.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="ejemplo.html">FREETOURIST</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="ejemplo.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="options.html">OPTIONS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="testimonials.html">TESTIMONIALS</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="title">
+        <h1>THE COLOSSEUM</h1>
+    </div> 
+    <div class="container">
+      <div class="column">
+        <h2>HISTORY</h2>
+        <hr class="linea-roja3">
+        <p>The Colosseum, also known as the Flavian Amphitheatre, is an oval amphitheater located in the center of Rome, Italy. It is considered one of the greatest architectural and engineering achievements of the Roman Empire. Construction of the Colosseum began in 70 AD and was completed in 80 AD under the emperor Vespasian.</p>
+        <p>The Colosseum was primarily used for gladiatorial contests, animal hunts, mock naval battles, and other public spectacles. It could accommodate an estimated 50,000 to 80,000 spectators and had a complex system of underground tunnels and chambers used to house animals, slaves, and props.</p>
+        <p>Today, the Colosseum is a major tourist attraction and a symbol of ancient Roman civilization. It is recognized as a UNESCO World Heritage Site.</p>
+      </div>
+      <div class="column">
+        <h2>WHAT TO SEE</h2>
+        <hr class="linea-roja3">
+        <p>The Colosseum offers visitors a chance to explore its remarkable architecture and learn about its historical significance. Some key features and areas to see include:</p>
+        <ul>
+          <li>Inner Arena: The central area where gladiatorial contests took place.</li>
+          <li>Underground Chambers: Explore the underground tunnels and chambers where animals and gladiators awaited their turn in the arena.</li>
+          <li>Upper Levels: Climb to the upper levels for panoramic views of the Colosseum and the surrounding area.</li>
+          <li>Archaeological Exhibits: Visit the on-site museum that displays artifacts and exhibits related to the Colosseum's history.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="title-container">
+        <h2>PHOTO GALLERY</h2>
+        <hr class="linea-roja4">
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="colosseum1.jpeg" alt="Taj Mahal">
+        </div>
+        <div class="mySlides fade">
+          <img src="colosseum2.jpeg" alt="Taj Mahal">
+        </div>
+        <div class="mySlides fade">
+          <img src="colosseum3.jpg" alt="Taj Mahal">
+        </div>
+        <div class="mySlides fade">
+          <img src="colosseum4.jpg" alt="Taj Mahal">
+        </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+    
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 1500); // Cambia aquí el tiempo de transición en milisegundos (ejemplo: 2000 para 2 segundos)
+      }
+    </script>
+  </main>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+  const line1 = document.querySelector(".linea-roja1");
+  const h1 = document.querySelector(".title h1");
+
+  const h1TextWidth = h1.scrollWidth;
+  line1.style.width = h1TextWidth + "px";
+});
+
+
+
+  </script>
+  </main>
+    <footer>
+      <div class="footer-container">
+        <h3 class="footer-heading">FREETOURIST</h3>
+        <p>&copy; 2023 Freetourist. All rights reserved</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="options.html">OPTIONS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="testimonials.html">TESTIMONIALS</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </footer>
+  
+  </body>
+  </html>
+  

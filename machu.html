@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>THe great wall of china</title>
+  <link rel="stylesheet" href="china.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="ejemplo.html">FREETOURIST</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="ejemplo.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="options.html">OPTIONS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="testimonials.html">TESTIMONIALS</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="title">
+        <h1>MACHU PICHU</h1>
+    </div> 
+  <div class="container">
+    <div class="column">
+        <h2>HISTORY</h2>
+        <hr class="linea-roja3">
+        <p>Machu Picchu is an Incan citadel located in the Andes Mountains of Peru. It was built in the 15th century and was later abandoned, possibly due to the Spanish Conquest. The site was rediscovered in 1911 by Hiram Bingham, an American explorer, and since then has become one of the most visited tourist attractions in South America.</p>
+        <p>The citadel was built using traditional Incan techniques and is made up of over 200 structures, including temples, residences, and storage buildings. The site is also surrounded by agricultural terraces, which were used to grow crops such as corn and potatoes.</p>
+        <p>Machu Picchu is believed to have been a royal estate or a religious site for the Inca rulers. Its location and design also suggest that it was an important center for astronomical observations and astrological predictions.</p>
+    </div>
+    <div class="column">
+        <h2>WHAT TO SEE</h2>
+        
+        <p>Machu Picchu is divided into two main sections: the urban sector, which includes temples, plazas, and residences, and the agricultural sector, which includes terraces and irrigation systems. Some of the most notable structures to see include:</p>
+        <ul>
+          <li>The Intihuatana Stone, a carved rock that is believed to have been used for astronomical observations and as a ceremonial site</li>
+          <li>The Temple of the Sun, a round structure dedicated to the Incan sun god Inti</li>
+          <li>The Temple of the Three Windows, a trapezoidal structure with three windows that align with the rising sun during the solstices</li>
+          <li>The House of the Priest, a small building with a thatched roof that is believed to have been used as a residence for high-ranking priests</li>
+        </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="title-container">
+      <h2>PHOTO GALLERY</h2>
+      <hr class="linea-roja4">
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="m.jpg" alt="Taj Mahal">
+      </div>
+      <div class="mySlides fade">
+        <img src="tajmahal2.jpg" alt="Taj Mahal">
+      </div>
+      <div class="mySlides fade">
+        <img src="tajmahal3.jpg" alt="Taj Mahal">
+      </div>
+      <div class="mySlides fade">
+        <img src="tajmahal4.jpg" alt="Taj Mahal">
+      </div>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+  <script>
+    var slideIndex = 0;
+    showSlides();
+  
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 1500); // Cambia aquí el tiempo de transición en milisegundos (ejemplo: 2000 para 2 segundos)
+    }
+  </script>
+</main>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+const line1 = document.querySelector(".linea-roja1");
+const h1 = document.querySelector(".title h1");
+
+const h1TextWidth = h1.scrollWidth;
+line1.style.width = h1TextWidth + "px";
+});
+
+
+
+</script>
+</main>
+        
+<footer>
+  <footer>
+    <div class="footer-container">
+      <h3 class="footer-heading">FREETOURIST</h3>
+      <p>&copy; 2023 Freetourist. All rights reserved</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="options.html">OPTIONS</a></li>
+      <li><a href="events.html">EVENTS</a></li>
+      <li><a href="testimonials.html">TESTIMONIALS</a></li>
+      <li><a href="contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </footer>
+  
+</footer>
+
+</body>
+</html>
+

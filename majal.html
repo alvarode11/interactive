@@ -1,0 +1,131 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Taj Mahal</title>
+    <link rel="stylesheet" href="china.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="ejemplo.html">FREETOURIST</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="ejemplo.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="options.html">OPTIONS</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="testimonials.html">TESTIMONIALS</a></li>
+          <li><a href="contact_us.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="title">
+          <h1>TAJ MAHAL</h1>
+      </div> 
+      <div class="container">
+        <div class="column">
+          <h2>HISTORY</h2>
+          <hr class="linea-roja2">
+          <p>The Taj Mahal is an ivory-white marble mausoleum located in Agra, India. It was commissioned in 1632 by the Mughal emperor Shah Jahan to house the tomb of his favorite wife, Mumtaz Mahal, who died during childbirth. Construction of the Taj Mahal was completed in 1643, and it is considered a masterpiece of Mughal architecture.</p>
+          <p>The Taj Mahal is renowned for its intricate decorative work, including marble inlay, calligraphy, and geometric designs. The main building is flanked by four minarets and is set within a large complex featuring gardens, reflecting pools, and other structures.</p>
+          <p>Today, the Taj Mahal is recognized as a UNESCO World Heritage Site and is considered one of the New Seven Wonders of the World. It attracts millions of visitors each year and is an iconic symbol of India's rich cultural heritage.</p>
+        </div>
+        <div class="column">
+          <h2>WHAT TO SEE</h2>
+          <hr class="linea-roja3">
+          <p>Visitors to the Taj Mahal can explore various areas and features of this magnificent monument. Here are some highlights:</p>
+          <ul>
+            <li>Main Mausoleum: Visit the central building that houses the tombs of Shah Jahan and Mumtaz Mahal.</li>
+            <li>Gardens: Stroll through the well-manicured gardens surrounding the Taj Mahal, featuring fountains, pathways, and lush greenery.</li>
+            <li>Reflecting Pool: Admire the famous reflecting pool that offers a stunning view of the Taj Mahal's reflection.</li>
+            <li>Minarets: Marvel at the four towering minarets that flank the main building and provide a panoramic view of the surrounding area.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="title-container">
+          <h2>PHOTO GALLERY</h2>
+          <hr class="linea-roja4">
+        </div>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="tajmahal1.jpg" alt="Taj Mahal">
+          </div>
+          <div class="mySlides fade">
+            <img src="tajmahal2.jpg" alt="Taj Mahal">
+          </div>
+          <div class="mySlides fade">
+            <img src="tajmahal3.jpg" alt="Taj Mahal">
+          </div>
+          <div class="mySlides fade">
+            <img src="tajmahal4.jpg" alt="Taj Mahal">
+          </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+      <script>
+        var slideIndex = 0;
+        showSlides();
+      
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1;
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+          setTimeout(showSlides, 1500); // Cambia aquí el tiempo de transición en milisegundos (ejemplo: 2000 para 2 segundos)
+        }
+      </script>
+    </main>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const line1 = document.querySelector(".linea-roja1");
+    const h1 = document.querySelector(".title h1");
+
+    const h1TextWidth = h1.scrollWidth;
+    line1.style.width = h1TextWidth + "px";
+  });
+
+
+
+    </script>
+    <footer>
+      <footer>
+        <div class="footer-container">
+          <h3 class="footer-heading">FREETOURIST</h3>
+          <p>&copy; 2023 Freetourist. All rights reserved</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="options.html">OPTIONS</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="testimonials.html">TESTIMONIALS</a></li>
+            <li><a href="contact_us.html">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </footer>
+  </body>
+  </html>
+

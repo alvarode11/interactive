@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Explore Egypt</title>
+  <link rel="stylesheet" href="china.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="example.html">FREETOURIST</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="example.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="options.html">OPTIONS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="testimonials.html">TESTIMONIALS</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="title">
+      <h1>EXPLORE EGYPT</h1>
+    </div>
+    <div class="container">
+      <div class="column">
+        <h2>CULTURE</h2>
+        <hr class="linea-roja3">
+        <p>Egypt is a country with a rich cultural heritage that spans thousands of years. Its ancient civilization, pharaohs, and monumental structures have captivated people from around the world.</p>
+        <p>Egyptian culture is deeply influenced by its history, religion, and traditions. The art, architecture, and language of ancient Egypt continue to inspire and intrigue modern society.</p>
+        <p>The Egyptian people are known for their hospitality and warm welcoming nature. They have a strong sense of community and family values.</p>
+      </div>
+      <div class="column">
+        <h2>TOP TOURIST DESTINATIONS</h2>
+        <hr class="linea-roja3">
+        <p>When exploring Egypt, there are several iconic tourist destinations to visit:</p>
+        <ul>
+          <li>Giza Pyramids: Marvel at the Great Pyramid of Giza, one of the Seven Wonders of the Ancient World, and explore the nearby Sphinx and other pyramids.</li>
+          <li>Valley of the Kings: Discover the royal tombs of pharaohs in Luxor's Valley of the Kings, including the tomb of Tutankhamun.</li>
+          <li>Karnak Temple: Explore the vast temple complex in Luxor, dedicated to the worship of Amun-Ra, and admire its impressive statues, obelisks, and hypostyle halls.</li>
+          <li>Abu Simbel: Visit the magnificent temples of Abu Simbel, constructed by Ramses II, and witness the awe-inspiring sight of the sun illuminating the interior twice a year.</li>
+          <li>The Egyptian Museum: Immerse yourself in Egypt's history and view the extensive collection of ancient artifacts, including the treasures of Tutankhamun, in Cairo's Egyptian Museum.</li>
+          <li>Nile River Cruise: Embark on a relaxing cruise along the Nile River, enjoying the picturesque landscapes, ancient temples, and local villages along the way.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="title-container">
+        <h2>PHOTO GALLERY</h2>
+        <hr class="linea-roja4">
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="egypt_image1.jpg" alt="Egypt">
+        </div>
+        <div class="mySlides fade">
+          <img src="egypt_image2.jpg" alt="Egypt">
+        </div>
+        <div class="mySlides fade">
+          <img src="egypt_image3.jpg" alt="Egypt">
+        </div>
+        <div class="mySlides fade">
+          <img src="egypt_image4.jpg" alt="Egypt">
+        </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 1500); // Change the transition time in milliseconds here (e.g., 2000 for 2 seconds)
+      }
+    </script>
+  </main>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const line1 = document.querySelector(".linea-roja1");
+      const h1 = document.querySelector(".title h1");
+
+      const h1TextWidth = h1.scrollWidth;
+      line1.style.width = h1TextWidth + "px";
+    });
+  </script>
+  <footer>
+    <footer>
+      <div class="footer-container">
+        <h3 class="footer-heading">FREETOURIST</h3>
+        <p>&copy; 2023 Freetourist. All rights reserved</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="options.html">OPTIONS</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="testimonials.html">TESTIMONIALS</a></li>
+          <li><a href="contact_us.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </footer>
+</body>
+</html>
